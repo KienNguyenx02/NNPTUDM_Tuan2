@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td>ID</td>
+                    <td>Title</td>
+                    <td>Views</td>
+                    <td>Actions</td>
+                </tr>
+            </thead>
+            <tbody id="body-table">
+                
+            </tbody>
+        </table>
+    </div>
+    <div>
+        <input type="text" id="id_txt"/>
+        <input type="text" id="title_txt"/>
+        <input type="text" id="views_txt"/>
+    </div>
+    <div>
+        <input type="submit" value="Save" onclick="Save()"/>
+    </div>
+
+    <hr>
+
+    <div id="comments-section" style="display: none;">
+        <h3>Comments for Post <span id="comments-post-id"></span></h3>
+        <div id="comments-list"></div>
+        <div>
+            <h4>Add/Edit Comment</h4>
+            <input type="hidden" id="comment_id" />
+            <input type="hidden" id="comment_post_id" />
+            <textarea id="comment_text" rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Save Comment" onclick="SaveComment()"/>
+        </div>
+    </div>
+</body>
+
+</html>
